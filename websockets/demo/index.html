@@ -1,0 +1,38 @@
+---
+layout: page
+extra_scripts:
+  - /js/websockets-demo.js
+---
+
+<div class="demo">
+
+  <h1 class="page-heading">WebSockets Demo - open your console to see it in action</h1>
+
+  <p>
+	{% highlight javascript %}  
+// Connect to an echo server; send a message and listen to the echo
+    
+var socket = new WebSocket('ws://echo.websocket.org');
+
+socket.onopen = function() {
+    console.log('connection with server was established');
+    socket.send(JSON.stringify('Thanks for having me here!'));
+};
+
+socket.onclose = function() {
+    console.log('connection with server was closed');
+};
+
+socket.onerror = function(e) {
+    console.log('an error occured', e);
+};
+
+socket.onmessage = function(message) {
+    console.log('received a message from server:', JSON.parse(message.data));
+};
+	{% endhighlight %}
+  </p>
+
+  <p><a href="{% post_url 2015-08-08-websockets-intro %}">See the WebSockets article</a> to learn more about this technology.</p>
+
+</div>

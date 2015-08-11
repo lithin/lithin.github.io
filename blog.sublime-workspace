@@ -1,0 +1,672 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stocks",
+				"stocksData"
+			],
+			[
+				"st",
+				"stocksData"
+			],
+			[
+				"s",
+				"stock_request"
+			],
+			[
+				"send",
+				"sendMessage"
+			],
+			[
+				"req",
+				"requestGigyaUsers"
+			],
+			[
+				"timeout",
+				"timeoutUsers"
+			],
+			[
+				"re",
+				"requestGigyaUsers"
+			],
+			[
+				"timet",
+				"timeoutUsers"
+			],
+			[
+				"requ",
+				"requestMethod"
+			],
+			[
+				"gra",
+				"graffiti"
+			],
+			[
+				"graf",
+				"graffitiService"
+			],
+			[
+				"timeou",
+				"timeoutUsersService"
+			],
+			[
+				"timeotu",
+				"timeoutUsersService"
+			],
+			[
+				"timeoutU",
+				"timeoutUsersService"
+			],
+			[
+				"timeu",
+				"timeoutUsers"
+			],
+			[
+				"gigya",
+				"requestGigyaUsers"
+			],
+			[
+				"gigy",
+				"gigyaId"
+			],
+			[
+				"make",
+				"makeRequestWithCookie"
+			],
+			[
+				"ma",
+				"makeRequestWithCookie"
+			],
+			[
+				"time",
+				"timeoutUsers"
+			],
+			[
+				"reque",
+				"requestGigyaUsers"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"get",
+				"getUrl"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 506,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Anna/Documents/Workspace/web-sockets/ch2/index.html",
+		"/Users/Anna/Documents/Workspace/web-sockets/ch2/script.js",
+		"/Users/Anna/Documents/Workspace/web-sockets/ch2/server.js",
+		"/Users/Anna/Documents/Workspace/web-sockets/web-socket.js",
+		"/Users/Anna/Documents/Workspace/web-sockets/server.js",
+		"/Users/Anna/Documents/Workspace/web-sockets/index.html",
+		"/Users/Anna/Documents/Workspace/web-sockets/web-sockets.sublime-project",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-uk-london-search-rVnjt2.json",
+		"/Users/Anna/Documents/Workspace/miyagi/app/config/parameters.ini",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/lists/listTiles.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/search/searchProvider.js",
+		"/Users/Anna/Documents/Workspace/miyagi/app/config/parameters_test.ini",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-uk-london-search-rVnJt.json",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/filters/mapping-uk-london-search-hYIcV2.json",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-uk-london-search-uDq8s2.json",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-uk-london-search-rVnJt3.json",
+		"/Users/Anna/Documents/Workspace/miyagi/app/config/parameters.ini.vagrant",
+		"/Users/Anna/Documents/Workspace/miyagi/app/config/parameters.ini.dist",
+		"/Users/Anna/Documents/Workspace/miyagi/app/config/parameters.ini.bak",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/timeoutdigital/php-commons/src/TimeOut/Component/Search/Tagging/Helper/SearchTaggingHelper.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/leafo/lessphp/tests/inputs/selector_expressions.less",
+		"/Users/Anna/Documents/Workspace/miyagi/selenium.log",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/lists/listTiles.html",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/listings.less",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/lib/angular/i18n/angular-locale_it-sm.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/twig/twig/lib/Twig/LexerInterface.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/LICENSE",
+		"/Users/Anna/Documents/Workspace/miyagi/ansible/ansible.cfg",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/lovr.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/services/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/models/timeout_user.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/common/timeoutUsersSpec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/services/timeout_users.js",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/CategorisationBundle/TimeOutCategorisationBundle.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/fonts/TimeOut_Icons/timeout-icons.svg",
+		"/Users/Anna/Documents/Workspace/miyagi/app/logs/test.log",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/lib/angular/i18n/angular-locale_or.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/gigya/gigya.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/fixtures/ngapp/graffiti_facets.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/fixtures/ngapp/graffitiProvider.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/graffiti/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/ngapp/graffiti/graffiti.spec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/graffiti_facets.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/fixtures/webServices/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/cms_api/public/javascripts/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/timeoutdigital/php-commons/src/TimeOut/Bundle/UtilityBundle/TimeOutUtilityBundle.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/timeout.less",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/core/omniture.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/karma.conf.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/helpers.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/fixtures/common/templates/graffiti_data.html",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/common/graffitiSpec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/core/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/models/timeoutUser.js",
+		"/Users/Anna/Documents/Workspace/hacking-fe.txt",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/premium_profile_tracker.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php",
+		"/Users/Anna/Documents/Workspace/Mdo-ular-css.txt",
+		"/Users/Anna/Documents/Workspace/ECMA6.txt",
+		"/Users/Anna/Documents/Workspace/event-loop.txt",
+		"/Users/Anna/Documents/Workspace/web-components.txt",
+		"/Users/Anna/Documents/Workspace/design-for-displays.txt",
+		"/Users/Anna/Documents/Workspace/service-workers.txt",
+		"/Users/Anna/Documents/Workspace/resilient-fe.txt",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/premium.less",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Event/PostResponseEvent.php",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/PageBundle/Component/PageRetriever.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web/dist/dev/js/core/graffiti.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/common/favouritesSpec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/services/favourites.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/common/personalisationSpec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/common/services/peronalisation.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/symfony/symfony/src/Symfony/Component/Console/Helper/HelperSet.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/behat/behat/src/Behat/Behat/Console/Processor/HelpProcessor.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/behat/symfony2-extension/testapp/src/Behat/Sf2DemoBundle/Features/kernel_access.feature",
+		"/Users/Anna/Documents/Workspace/miyagi/web/dist/dev/js/ngapp/personalisation.js",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/PersonalisationBundle/PersonalisationBundle.php",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/PersonalisationBundle/DependencyInjection/PersonalisationExtension.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/personalisation/personalisationProvider.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/personalisation/personalisationProviders.norjs.spec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/personalisation-app/app.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/personalisation.less",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/symfony/symfony/src/Symfony/Component/Templating/PhpEngine.php",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/__files/venue/graffiti/body-70273-bookings-hELX5.json",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/favourites.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/kriswallsmith/assetic/src/Assetic/Asset/FileAsset.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/behat/mink-extension/i18n/fr.xliff",
+		"/Users/Anna/Documents/Workspace/miyagi/web/dist/dev/js/ngapp/search.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/behat/mink-extension/features/search.feature",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/gigya/gigya_register.js",
+		"/Users/Anna/Documents/Workspace/miyagi/app/bootstrap.php.cache",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/timeoutdigital/php-commons/src/TimeOut/Component/Routing/Storage/PDOStorage.php",
+		"/Users/Anna/Documents/Workspace/miyagi/app/Resources/views/base_funnelled.html.twig",
+		"/Users/Anna/Documents/Workspace/miyagi/.gitmodules",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/jdorn/sql-formatter/tests/performance.php",
+		"/Users/Anna/Documents/Workspace/miyagi/roles/cms_api/tasks/main.yml",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/behat/sahi-client/src/Behat/SahiClient/Exception/AbstractException.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/guzzle/guzzle/src/Guzzle/Plugin/Backoff/AbstractBackoffStrategy.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web/app_beta.php",
+		"/Users/Anna/Documents/Workspace/miyagi/app/autoload.php",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/__files/search/sponsored/body-263577-images-bAXeF.json",
+		"/Users/Anna/Documents/Workspace/miyagi/behat.yml",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Tests/Session/Storage/Handler/PdoSessionHandlerTest.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Session/Storage/Handler/PdoSessionHandler.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/BDD/Features/bootstrap/PostDeployFeatureContext.php",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/phpunit/phpunit/build/phar-autoload.php.in",
+		"/Users/Anna/Documents/Workspace/miyagi/app/Resources/views/base.html.twig",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/modules/gigya/gigya_log_Spec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/personalisation-app/main/mainController.js",
+		"/Users/Anna/Documents/Workspace/miyagi/app/Resources/views/_drawer.html.twig",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/tabs.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/drawer.less",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/drawer.js",
+		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/PersonalisationBundle/Controller/MyTimeOutController.php",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/.jshintrc",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userModel.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userProvider.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userProvider.spec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/tiles.less",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/config/config.js",
+		"/Users/Anna/Documents/Workspace/miyagi/web/config.php",
+		"/Users/Anna/Documents/Workspace/miyagi/app/console",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/leafo/lessphp/tests/inputs/compile_on_mixin.less",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/package.json",
+		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-analytics-impressions-ke0lE.json",
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/userSpec.js",
+		"/Users/Anna/Documents/Workspace/miyagi/vendor/doctrine/dbal/UPGRADE"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web",
+			"/Users/Anna/Documents/Workspace/miyagi/app/Resources",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js",
+			"/Users/Anna/Documents/Workspace/miyagi/src",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js",
+			"/Users/Anna/Documents/Workspace/miyagi/app/Resources",
+			"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules",
+			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/elements"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"timeoutUser",
+			"timeoutuser",
+			"tl",
+			".sponsored",
+			"web",
+			"clients",
+			"d",
+			"deferred",
+			"graffiti",
+			"'graffiti'",
+			"PDOStorage",
+			"broadcasts",
+			"data-module=",
+			"data-module=\"drawer",
+			"data-module",
+			"toggleTabInputTypes",
+			"broadcasts.breakpoint.change",
+			"breakpoint",
+			"pubsub",
+			"lock-position",
+			"column_",
+			"column",
+			"tile__info_tag",
+			"tile__info",
+			"tile",
+			"grunt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"getSettingsDeferred"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 159.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"para",
+				"app/config/parameters_test.ini"
+			],
+			[
+				"searhprov",
+				"web-src/app/js/ngapp/modules/search/searchProvider.js"
+			],
+			[
+				"listt",
+				"web-src/app/js/ngapp/modules/lists/listTiles.js"
+			],
+			[
+				"timeout_user",
+				"web-src/app/js/common/models/timeout_user.js"
+			],
+			[
+				"lovr",
+				"web-src/app/js/modules/lovr.js"
+			],
+			[
+				"graffiti",
+				"web-src/app/js/common/services/graffiti.js"
+			],
+			[
+				"graffiti.js",
+				"web-src/app/js/common/services/graffiti.js"
+			],
+			[
+				"timeoutuser",
+				"web-src/app/js/common/services/timeout_users.js"
+			],
+			[
+				"omnitu",
+				"web-src/app/js/core/omniture.js"
+			],
+			[
+				"premium",
+				"web-src/app/js/modules/premium_profile_tracker.js"
+			],
+			[
+				"graff",
+				"web/dist/dev/js/core/graffiti.js"
+			],
+			[
+				"helper",
+				"web-src/tests/helpers.js"
+			],
+			[
+				"karma",
+				"web-src/karma.conf.js"
+			],
+			[
+				"persona",
+				"web-src/tests/unit/common/personalisationSpec.js"
+			],
+			[
+				"favourites",
+				"web-src/app/js/common/services/favourites.js"
+			],
+			[
+				"favourite",
+				"web-src/app/js/common/services/favourites.js"
+			],
+			[
+				"favouri",
+				"web-src/app/js/modules/favourites.js"
+			],
+			[
+				"favourit",
+				"web-src/app/js/modules/favourites.js"
+			],
+			[
+				"search.js",
+				"web/dist/dev/js/ngapp/search.js"
+			],
+			[
+				"graffitipro",
+				"web-src/tests/fixtures/ngapp/graffitiProvider.js"
+			],
+			[
+				"perso",
+				"web-src/app/less/modules/personalisation.less"
+			],
+			[
+				"abse_f",
+				"app/Resources/views/base_funnelled.html.twig"
+			],
+			[
+				"base",
+				"app/Resources/views/base_funnelled.html.twig"
+			],
+			[
+				"pdostor",
+				"vendor/timeoutdigital/php-commons/src/TimeOut/Component/Routing/Storage/PDOStorage.php"
+			],
+			[
+				"base_fu",
+				"app/Resources/views/base_funnelled.html.twig"
+			],
+			[
+				"config.js",
+				"web-src/app/js/config/config.js"
+			],
+			[
+				"gigya_lo",
+				"web-src/tests/unit/modules/gigya/gigya_log_Spec.js"
+			],
+			[
+				"maincon",
+				"web-src/app/js/ngapp/personalisation-app/main/mainController.js"
+			],
+			[
+				"personalisation-a",
+				"web-src/app/js/ngapp/personalisation-app/app.js"
+			],
+			[
+				"userpro",
+				"web-src/app/js/ngapp/modules/user/userProvider.spec.js"
+			],
+			[
+				"usermod",
+				"web-src/app/js/ngapp/modules/user/userModel.js"
+			],
+			[
+				"gigya",
+				"web-src/app/js/modules/gigya/gigya.js"
+			],
+			[
+				"jshi",
+				"web-src/.jshintrc"
+			],
+			[
+				"gigya.js",
+				"web-src/app/js/modules/gigya/gigya.js"
+			],
+			[
+				"mytim",
+				"src/TimeOut/Bundle/Web/PersonalisationBundle/Controller/MyTimeOutController.php"
+			],
+			[
+				"drawer.js",
+				"web-src/app/js/modules/drawer.js"
+			],
+			[
+				"main.yml",
+				"roles/cms_api/tasks/main.yml"
+			],
+			[
+				"sponsor",
+				"web-src/tests/unit/ngapp/search/searchSponsored.norjs.spec.js"
+			],
+			[
+				"searchba",
+				"web-src/app/js/ngapp/modules/searchBar/searchBarController.js"
+			],
+			[
+				"searchbar",
+				"web-src/tests/unit/ngapp/search/searchBarController.norjs.spec.js"
+			],
+			[
+				"search.norj",
+				"web-src/tests/unit/ngapp/search/search.norjs.spec.js"
+			],
+			[
+				"app.js",
+				"web-src/app/js/ngapp/search-app/app.js"
+			],
+			[
+				"searchpro",
+				"web-src/app/js/ngapp/modules/search/searchProvider.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 /**
  * Reset some basic elements
  */
@@ -18,8 +22,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
+    color: $dark-brown;
+    background-color: $yellow;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -92,13 +96,8 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brown;
     }
 }
 
@@ -108,8 +107,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $pink;
+    border-left: 4px solid $pink;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -128,7 +127,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $pink;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -146,6 +145,11 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+strong {
+    font-weight: 400;
+    color: $black;
 }
 
 
@@ -169,8 +173,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
-
 
 /**
  * Clearfix
@@ -196,9 +198,41 @@ pre {
         width: 16px;
         height: 16px;
         vertical-align: middle;
+    }
+}
 
-        path {
-            fill: $grey-color;
-        }
+.icon--linkedin > svg {
+    width: 26px;
+    height: 26px;
+    margin: -5px;
+    vertical-align: text-top;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    border: 1px solid $dark-red;
+    background-color: $yellow;
+    color: $dark-brown;
+    padding: 5px;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+    background-color: $dark-brown;
+    color: $yellow;
+    padding: 7px;
+    font-size: 13px;
+
+    &:hover {
+        background-color: $pink;
+        color: $yellow;
     }
 }

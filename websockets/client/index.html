@@ -1,0 +1,91 @@
+---
+layout: page
+---
+
+<div class="demo">
+
+  <h1 class="page-heading">Client.js - using WebSocket in our page</h1>
+
+  <p>
+{% highlight javascript %}  
+/**
+ * client.js
+ * UI handler for the WebSocket example
+ * Initialises Socket and connects html elemnts to javascript events
+ */
+
+(function(){
+
+    var socket = new Socket('echo.websocket.org');
+    socket.on('open', function() {
+        $('form').submit(function(e) {
+            e.preventDefault();
+            socket.send($('input').val());
+        });
+
+        $('.disconnect').click(function() {
+            socket.close();
+        });
+    });
+
+    socket.on('message', function(message) {
+        $('.heard').append($('<li></li>').text(message));
+    });
+
+    socket.on('close', function() {
+        showNotification('You were disconnected from the server.');
+    });
+
+    socket.on('error', function() {
+        showNotification('Sorry, something has gone wrong. Please try again later.');
+    });
+
+    function showNotification(text) {
+        $('.notification').text(text).removeClass('hidden');
+        $('.echo').addClass('hidden');
+    }
+})();
+{% endhighlight %}
+  </p>
+
+  <h1 class="page-heading">Index.html - using WebSocket in our page</h1>
+
+  <p>
+{% highlight html %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    .hidden: {
+        display: none;
+    }
+    </style>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script defer src="websocket.js"></script>
+    <script defer src="client.js"></script>
+</head>
+
+<body>
+
+<div class="echo">
+    <ul class="heard"></ul>
+    <form>
+        <input type="text" />
+        <button type="submit">Send</button>
+    </form>
+    <button class="disconnect">Disconnect</button>
+</div>
+
+<div class="notification hidden"></div>
+
+</body>
+
+</html>
+{% endhighlight %}
+  </p>
+
+  <p><a href="{% post_url 2015-09-13-websockets-client %}">See the article</a> for detailed commentary on this code.</p>
+
+</div>

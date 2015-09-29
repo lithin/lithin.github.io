@@ -1,9 +1,14 @@
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    background-color: $dark-red;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -16,10 +21,10 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: $yellow;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    &:hover {
+        color: $yellow;
     }
 }
 
@@ -32,7 +37,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $pink;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -45,8 +50,7 @@
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+        border: 1px solid $pink;
         border-radius: 5px;
         text-align: right;
 
@@ -64,7 +68,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $pink;
                 }
             }
         }
@@ -92,13 +96,26 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: $dark-red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .icon >svg path {
+        fill: $yellow;
+    }
+
+    a:hover {
+        color: $pink;
+    }
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    color: $yellow;
 }
 
 .contact-list,
@@ -109,7 +126,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $yellow;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -163,6 +180,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    padding-bottom: 220px;
 }
 
 .page-heading {
@@ -180,12 +198,13 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $pink;
 }
 
 .post-link {
     display: block;
     font-size: 24px;
+    color: $dark-red;
 }
 
 

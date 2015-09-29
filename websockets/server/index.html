@@ -1,0 +1,74 @@
+---
+layout: page
+---
+
+<div class="demo">
+
+  <h1 class="page-heading">Server.js - basic server</h1>
+
+  <p>
+{% highlight javascript %}  
+var http = require('http');
+var server;
+
+function Server() {
+    return http.createServer(function(request, response) {
+        response.writeHead(404);
+        response.end();
+    });
+}
+
+module.exports = function() {
+    if (!server) {
+        server = new Server();
+    }
+
+    return server;
+};
+{% endhighlight %}
+  </p>
+
+  <h1 class="page-heading">Websockets-server.js - WebSocket server</h1>
+
+  <p>
+{% highlight javascript %}
+var Server = require('./server');
+var WebSocketServer = require('websocket').server;
+
+function init() {
+    var server = Server().listen(8080);
+    var webSocketServer = new WebSocketServer({
+        httpServer: server
+    });
+
+    webSocketServer.on('request', function(request) {
+        var socket = request.accept('plain-text');
+
+        socket.on('message', function(message) {
+            console.log('Received message: ' + message.utf8Data);
+            socket.sendUTF(message.utf8Data);
+        });
+    });
+
+    console.log('Server is up and running!');
+
+    return webSocketServer;
+}
+
+module.exports = {
+    init: init
+};
+{% endhighlight %}
+  </p>
+
+  <h1 class="page-heading">Run-server.js - run server locally</h1>
+
+  <p>
+{% highlight javascript %}
+var server = require('./websocket-server').init();
+{% endhighlight %}
+  </p>
+
+  <p><a href="{% post_url 2015-09-28-websockets-server %}">See the article</a> for detailed commentary on this code.</p>
+
+</div>

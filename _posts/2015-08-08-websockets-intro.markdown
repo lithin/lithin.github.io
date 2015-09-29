@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "W3C WebSocket API"
-date:   2015-08-08 12:15:50
 categories: WebSockets
 permalink: /:categories/:title.html
 ---

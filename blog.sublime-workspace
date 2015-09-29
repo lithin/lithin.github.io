@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"stocks",
 				"stocksData"
 			],
@@ -104,10 +108,18 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "_posts/2015-08-08-websockets-intro.markdown",
 			"settings":
 			{
-				"buffer_size": 506,
+				"buffer_size": 6418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2015-08-17-websockets-client.markdown",
+			"settings":
+			{
+				"buffer_size": 5682,
 				"line_ending": "Unix"
 			}
 		}
@@ -119,16 +131,28 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "",
+		"height": 347.0,
+		"last_filter": "inst",
 		"selected_items":
 		[
 			[
-				"insta",
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -140,10 +164,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
 				"pac",
 				"Package Control: Install Package"
 			],
@@ -152,7 +172,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -171,8 +191,39 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/Anna/Documents/Workspace/github_pages/blog",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_includes",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_layouts",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_posts",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_sass",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_site",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_site/category",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_site/category/websockets",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/category",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/css"
+	],
 	"file_history":
 	[
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_layouts/post.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_layouts/category.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/category/websockets/index.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/blog.sublime-project",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_posts/2015-08-17-websockets-client.markdown",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_sass/_layout.scss",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_sass/_base.scss",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/css/main.scss",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_includes/header.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_layouts/default.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/js/websockets-demo.js",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/index.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_site/category/websockets/index.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_site/about/index.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/websockets/demo/index.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_includes/footer.html",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/_config.yml",
+		"/Users/Anna/Documents/Workspace/github_pages/blog/about.md",
 		"/Users/Anna/Documents/Workspace/web-sockets/ch2/index.html",
 		"/Users/Anna/Documents/Workspace/web-sockets/ch2/script.js",
 		"/Users/Anna/Documents/Workspace/web-sockets/ch2/server.js",
@@ -282,35 +333,19 @@
 		"/Users/Anna/Documents/Workspace/miyagi/vendor/phpunit/phpunit/build/phar-autoload.php.in",
 		"/Users/Anna/Documents/Workspace/miyagi/app/Resources/views/base.html.twig",
 		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/modules/gigya/gigya_log_Spec.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/personalisation-app/main/mainController.js",
-		"/Users/Anna/Documents/Workspace/miyagi/app/Resources/views/_drawer.html.twig",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/tabs.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/drawer.less",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/modules/drawer.js",
-		"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web/PersonalisationBundle/Controller/MyTimeOutController.php",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/.jshintrc",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userModel.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userProvider.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/modules/user/userProvider.spec.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/less/modules/tiles.less",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/config/config.js",
-		"/Users/Anna/Documents/Workspace/miyagi/web/config.php",
-		"/Users/Anna/Documents/Workspace/miyagi/app/console",
-		"/Users/Anna/Documents/Workspace/miyagi/vendor/leafo/lessphp/tests/inputs/compile_on_mixin.less",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/package.json",
-		"/Users/Anna/Documents/Workspace/miyagi/mockserver/mappings/search/sponsored/mapping-analytics-impressions-ke0lE.json",
-		"/Users/Anna/Documents/Workspace/miyagi/web-src/tests/unit/userSpec.js",
-		"/Users/Anna/Documents/Workspace/miyagi/vendor/doctrine/dbal/UPGRADE"
+		"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js/ngapp/personalisation-app/main/mainController.js"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/Anna/Documents/Workspace/github_pages/blog/_sass",
+			"/Users/Anna/Documents/Workspace/github_pages/blog",
 			"/Users/Anna/Documents/Workspace/miyagi/src/TimeOut/Bundle/Web",
 			"/Users/Anna/Documents/Workspace/miyagi/app/Resources",
 			"/Users/Anna/Documents/Workspace/miyagi/web-src/app/js",
@@ -331,6 +366,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text-color",
+			"background-colo",
+			"background",
+			"background-colo",
+			"wrapper",
+			"main",
+			"title",
+			"site-title",
+			"background-color",
+			"about",
 			"timeoutUser",
 			"timeoutuser",
 			"tl",
@@ -369,40 +414,68 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "_posts/2015-08-08-websockets-intro.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 506,
+						"buffer_size": 6418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								670,
+								670
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2015-08-17-websockets-client.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4787,
+								4787
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2612.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -413,7 +486,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{

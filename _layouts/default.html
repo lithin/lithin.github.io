@@ -5,19 +5,21 @@
 
   <body>
 
-    {% include header.html %}
+    <div id="container">
+      {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
+
+      {% include footer.html %}
+
+      {% for script in page.extra_scripts %}
+          <script src="{{ script }}"></script>
+      {% endfor %}
     </div>
-
-    {% include footer.html %}
-
-    {% for script in page.extra_scripts %}
-        <script src="{{ script }}"></script>
-    {% endfor %}
   </body>
 
 </html>

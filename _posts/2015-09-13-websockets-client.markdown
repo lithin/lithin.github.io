@@ -2,7 +2,7 @@
 layout: post
 title:  "WebSocket Client - Part II"
 categories: WebSockets
-permalink: /:categories/:title.html
+permalink: /websockets/websocket-client-ii.html
 ---
 
 After extending WebSocket API with our own implementation in [Part I][part-i], Part II will focus on user interaction with the socket. We'll do more html and css and jquery so it should be a little bit of a break after the javascript marathon of [Part I][part-i].

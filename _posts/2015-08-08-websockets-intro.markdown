@@ -2,7 +2,7 @@
 layout: post
 title:  "W3C WebSocket API"
 categories: WebSockets
-permalink: /:categories/:title.html
+permalink: /websockets/w3c-websocket-api.html
 ---
 When using [GitHub][github], you’ve probably noticed that it is very quick to show you notifications and new commits, practically real time. Quite a few web apps are now updating their data and **showing notifications instantaneously**. For most part, it isn’t done by polling the server every second or so, or using black magic; instead, they are using WebSockets. GitHub was my original inspiration to try WebSockets out - they seemed to be pushing web to a truly 2.0 version that can seamlessly handle and display any user interaction with the content.
 
@@ -72,7 +72,7 @@ In case you do need to support Browsers-Which-Must-Not-Be-Named, you can either 
 
 #Next steps
 
-If you feel like trying WebSockets as well but aren’t sure how to begin, keep an eye on [my twitter][twitter] to see when **more articles are out**. I’d like to share with you more in-depth view of how WebSockets work, their possible security issues and how to address them, and also some practical hands-on tutorials. We’ll start with that next time: implementation of W3C WebSockets with node server.
+If you feel like trying WebSockets as well but aren’t sure how to begin, keep an eye on [my twitter][twitter] to see when **more articles are out**. I’d like to share with you some hands-on tutorials. We’ll start with that next time: implementation of W3C WebSockets with node server.
 
 [github]:  http://github.com
 [wiki-ws]: https://en.wikipedia.org/wiki/WebSocket

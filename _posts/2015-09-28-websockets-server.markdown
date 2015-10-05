@@ -2,7 +2,7 @@
 layout: post
 title:  "WebSocket NodeJS Server"
 categories: WebSockets
-permalink: /:categories/:title.html
+permalink: /websockets/websocket-nodejs-server.html
 ---
 After building a sample client that was communicating with the test echo server, we can extend our knowledge of **WebSockets** by creating our own **NodeJS server**.
 
@@ -169,7 +169,7 @@ Note that if you go to `http://localhost:8080` in your browser, it will respond 
 
 #Conclusion
 
-And that's it! If you want to see server code all together, you can do so [here][codebase]. [In this folder][demo], you can see all the code together, including html and all.
+And that's it! If you want to see server code all together, you can do so [here][codebase]. [In this repository][demo], you can see all the code together, including html and all.
 
 It should be really easy for you now to build on top of this tutorial, to create anything you like. Chat? Notifications? Real-time updates of data? You name it.
 
@@ -181,4 +181,4 @@ Happy coding!
 [codebase]: /websockets/server/
 [sub]: http://blog.caucho.com/2010/05/07/websockets-and-sub-protocols/
 [stomp]: http://jmesnil.net/stomp-websocket/doc/
-[demo]: /websockets/server-demo
+[demo]: https://github.com/lithin/websocket-server-demo

@@ -2,7 +2,7 @@
 layout: post
 title:  "WebSocket Client - Part I"
 categories: WebSockets
-permalink: /:categories/:title.html
+permalink: /websockets/websocket-client-i.html
 ---
 In the previous article, I've summed up why I think WebSockets are definitely worth a try. Let's carry on with **building our own client** by adding functionality to the WebSocket API step by step so that we can create an abstraction layer between the server and the client. That's what we'll do in **Part I** of this article; in [Part II][part-ii], we'll write the client javascript and some UI so that we can see our script in action.
 

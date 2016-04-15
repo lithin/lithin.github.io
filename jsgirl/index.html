@@ -1,0 +1,211 @@
+---
+layout: page
+---
+
+<div class="demo">
+
+  <h1>JS Girl</h1>
+
+  <p>
+    Hey girls, welcome to <strong>JS Girl!</strong> Here's a quick reminder of the basics we covered in the morning intro.
+    If you have any questions, feel free to get in touch.
+  </p>
+
+  <p>Have fun!</p>
+
+  <h1 class="page-heading">HTML</h1>
+
+  <p>HTML is the <strong>template</strong> of the page - it tells the browser which elements go where and what the content of the page actually is.</p>
+
+  <p><strong>Inspect element</strong> allows you to easily see html of any web page. It opens if you right click on any element on the page, and select “Inspect”.</p>
+
+  <p>
+    <strong>Tags</strong> are these slightly weird letters or words in angle brackets.
+    Tags are what HTML consists of, and they usually go in pairs: with opening tag and closing tag.
+  </p>
+
+  <p>Here’s the most basic HTML template that you can use whenever you're starting a new html page:</p>
+
+{% highlight html %}
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Basic template</title>
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+{% endhighlight %}
+
+  <p>And here's a list of commonly used tags that allow you to create blocks of content:</p>
+
+{% highlight html %}
+<p>This is a paragraph - it is used to display text</p>
+
+<a href="http://google.co.uk">This is a link - if a user clicks it,
+they are taken to the url specified in "href"</a>
+
+<p><strong>This makes text strong</strong> and is usually used
+inside a paragraph, span, or div<p>
+
+<p><em>This makes text italic</em> and is also usually used inside
+a paragraph, span, or div<p>
+
+<div>This is the most basic block of content that dosn't really do
+anything special</div>
+
+<p><span>This is a one-line text wrapper;</span> it is usually used
+to group text and give it special style or to mark it for use in javascript</p>
+
+<img src="http//giphy.com/embed/AW3fwWAB4INgs"
+  alt="Alternative description used in case the image cannot be loaded">
+Note: This is the only tag that doesn't go in pair
+
+<h1>This is a title</h1>``` - you can use any number between h1 and h6
+{% endhighlight %}
+
+  <h1 class="page-heading">CSS</h1>
+
+  <p>
+    CSS is a description of how things should look in browser - colour of text, font size, background colour, …
+    It’s literally the <strong>“Style Sheet”</strong>
+  </p>
+
+  <p>
+    Inspect element allows us to see styles as well as html. Every element will have a list of styles that are applied.
+    The styles that aren't valid or are over-ridden by another declaration are crossed over.
+  </p>
+
+  <p>
+    You may notice user agent stylesheets - these are default styles of elements in browsers
+    (e.g. a paragraph normally has a bit of a margin at the bottom).
+  </p>
+
+  <p>
+    Here are a few very commonly used style declarations:
+  </p>
+
+  <ul>
+    <li>font-size: size of the text</li>
+    <li>font-family: type of text such as Times New Roman or Helvetica</li>
+    <li>font-weight: bold, thin etc</li>
+    <li>margin: “outter” spacing around element</li>
+    <li>padding: “inner” spacing around element</li>
+    <li>color: colour of the text</li>
+    <li>background: background of the element - can be a colour or an image</li>
+    <li>border: border of the element; it sits between margin and padding</li>
+  </ul>
+
+  <p>
+    Every html element can have a class that can be then used to style this element or to get it from javascript application.
+  </p>
+
+{% highlight html %}
+<p><span class="red-text">Red text</span> and normal text</p>
+{% endhighlight %}
+
+  <p>
+    In css, we use ".red-text" to style the element with this class.
+  </p>
+
+  <h1 class="page-heading">JS</h1>
+
+  <p>JavaScript is a programming language for browsers; it allows us to add interactions and dynamic elements to our page.</p>
+
+  <p>You can interact with javascript in browser through the Console. Press alt + cmd + j to open it - or inspect any element and choose the Console tab in dev tools.</p>
+
+  <p>The basic building block of any programming language is a variable:</p>
+
+{% highlight javascript %}
+var a = 5;
+var b = 3;
+a + b; //8
+{% endhighlight %}
+
+  <p>They come in different types - string, number, array, object, and function (but that is really an unusual object)</p>
+
+{% highlight javascript %}
+// string and number
+var fruit = 'banana';
+a+fruit; //5banana
+
+//arrays - list of values
+var listOfnumbers = [1, 2, 3];
+var listOfThings = ['bananana', 1, 2, 3, 'na', 'bana'];
+listOfThings[0]; //“bananana”
+
+//object - “map” of key and value
+var objectOfThings = {
+  first: 1,
+  second: 2,
+  third: [3, 4],
+  fourth: 'banana',
+  asdfg: {
+     another: 'one'
+  }
+};
+objectOfThings['first']; //1
+objectOfThings.first; //1
+
+//function - special type of object
+var addSomeNumber = function(someNumber) {
+  return a + someNumber;
+}
+
+addSomeNumber(6); //11
+
+//function - alternation way of writing it
+function addAnotherNumber(anotherNumber) {
+  return b + anotherNumber;
+}
+
+addAnotherNumber(100); //103
+{% endhighlight %}
+
+  <p>Objects and arrays have some built-in funcstions that you can use to modify the data</p>
+
+{% highlight javascript %}
+Concat, length
+Find, map, filter, reduce, Object.keys
+{% endhighlight %}
+
+  <p>Last but not least, every programming language has comments that are useful to explain your code yo your colleagues or your future self, or temporarily diasble code.</p>
+
+{% highlight javascript %}
+// single line comment
+/*
+multi line
+comment
+*/
+{% endhighlight %}
+
+  <h1 class="page-heading">Libraries and frameworks</h1>
+
+  <p>When coding in javascript, you'll hear words like libraries and frameworks very often.</p>
+
+  <p>Library is a piece of code that helps us with our own programming. It’s usually relatively simple a does one thing.</p>
+
+  <p>Framework is also a piece of code but is really complex. We use it to build applications with because it does a lot of work for us.</p>
+
+  <h1 class="page-heading">How the internet works</h1>
+
+  <p>
+    Browser or a mobile application is usually called a "client". Opposed to it is the server which a client connects to.
+    Server lives "on the internet" and we can access it from anywhere when we're online.
+  </p>
+
+  <p>Client code is the code that runs in the browser - it displays the website and gives user the ability to interact with content.</p>
+
+  <p>Server is the computer that clients connect to to see websites and get information.</p>
+
+  <p>Server-side application manages data, saves them and updates them in the database, or gets them from the database for us. It can send emails, collect and process data.</p>
+
+  <p>Database is a data storage that keeps any information we save into it for as long as we want to keep it there.</p>
+</div>

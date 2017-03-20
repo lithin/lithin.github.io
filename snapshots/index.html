@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <style>
+      .image-screen {
+        background-size: contain;
+      }
+
+      .button-snapshot-cat img {
+        position: absolute;
+        top: 337px;
+        right: 60px;
+        transform: scaleX(-1);
+        width: 400px;
+      }
+
+      .good-stuff-garfield img {
+        position: absolute;
+        top: 130px;
+        right: 60px;
+      }
+
+      .jest-ava-kockopes h1 {
+        margin-top: 90px;
+      }
+      .jest-ava-kockopes img {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-185px);
+      }
+
+      .bad-stuff-dog img {
+        position: absolute;
+        top: 150px;
+        right: 140px;
+        transform: scaleX(-1);
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, dark-purple-screen
+
+# Snapshot Testing
+Anna Doubkova, @lithinn
+
+???
+- what it is
+- how to use it
+- what's good
+- what's bad
+- if you should use them
+
+---
+
+class: center, middle, white-screen
+
+# What is it?
+
+???
+- new way of testing in js
+- improves experience
+- makes testing much faster
+- helps with building solid front-end code
+
+---
+
+class: purple-screen
+
+## The Triangle
+
+Manual
+Visual Regression
+Automated Browser
+Integration
+Unit | Snapshot
+
+---
+
+class: light-purple-screen, center, middle
+
+# What is a snapshot?
+
+---
+
+class: black-screen, image-screen
+background-image: url(snapshot1.png)
+
+???
+- this is a snapshot
+- visual testing for better or for worse
+
+---
+
+class: black-screen, image-screen, middle, center
+background-image: url(snapshot1.png)
+
+![](suspicious_cat.jpeg)
+
+???
+- tricky to get right as all e2e are
+- inspiration for js snapshots
+
+---
+class: light-purple-screen, button-snapshot-cat
+
+## Snapshot
+
+```js
+exports[`Button adds an icon if an icon source is present 1`] = `
+<button>
+  <img
+    alt=""
+    className="icon"
+    role="presentation"
+    src="/path/to/image.ext"
+  />
+  Submit
+</button>
+`;
+```
+
+![](dreaming_cat.png)
+
+???
+- this is a snapshot
+- components
+- objects
+- any data
+
+---
+
+class: dark-purple-screen, middle, center
+
+# How does it work?
+
+???
+- practical
+
+---
+
+class: black-screen
+
+## Example
+
+```js
+const Button = ({ children, iconSrc }) => (
+  <button>
+    {iconSrc &&
+      <img
+        src={iconSrc}
+        alt=""
+        role="presentation"
+        className="icon"
+      />
+    }
+    {children}
+  </button>
+);
+```
+---
+
+class: dark-purple-screen
+
+## Example
+
+```js
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import Button from './';
+
+describe('Button', () => {
+  it('adds an icon if an icon source is present', () => {
+    const result = shallow(
+      <Button iconSrc="/path/to/image.ext">
+        Submit
+      </Button>,
+    );
+
+    expect(toJson(result)).toMatchSnapshot();
+  });
+});
+```
+---
+
+class: black-screen, image-screen
+background-image: url(snapshot-new.png)
+
+???
+- next time you run tests
+
+---
+
+class: purple-screen
+
+## Refactoring time!
+
+```js
+const Button = ({ children, iconSrc }) => (
+  <button>
+    {children}
+    {iconSrc &&
+      <img
+        src={iconSrc}
+        alt=""
+        role="presentation"
+        className="icon"
+      />
+    }
+  </button>
+);
+```
+---
+
+class: black-screen, image-screen
+background-image: url(snapshot-editted.png)
+
+???
+- next time you run tests
+
+---
+
+class: black-screen, image-screen
+background-image: url(snapshot-updated.png)
+
+???
+- press u to update
+
+---
+
+class: dark-purple-screen, middle, center
+
+# Testing Framework
+
+---
+
+class: dark-purple-screen, jest-ava-kockopes, center
+
+# Jest vs Ava
+![](kockopes.gif)
+
+---
+
+background-image: url('dog_watching.jpg')
+class: black-screen
+
+---
+
+class: light-purple-screen, middle, center
+
+# What's good?
+
+---
+
+class: white-screen, good-stuff-garfield
+
+## Good stuff
+
+1. Better coverage
+2. Easy to write
+3. Easy to update
+4. Great for refactoring
+
+![](garfield.gif)
+
+---
+
+class: dark-purple-screen, middle, center
+
+# What's bad?
+
+---
+
+class: black-screen, bad-stuff-dog
+
+## Bad stuff
+
+1. No TDD
+2. Merge conflicts
+3. Test description
+4. Over-use
+5. Laziness
+
+![](droopy_dog.png)
+
+---
+
+class: white-screen, middle, center
+
+# Should I use them or not?
+
+---
+
+class: purple-screen, middle, center
+
+# Thank you!
+Anna Doubkova, @lithinn
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

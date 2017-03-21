@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="theme.css">
     <style>
       .image-screen {
-        background-size: contain;
+        background-size: auto 90%;
       }
 
       .button-snapshot-cat img {
@@ -19,8 +19,8 @@
 
       .good-stuff-garfield img {
         position: absolute;
-        top: 130px;
-        right: 60px;
+        top: 170px;
+        right: 143px;
       }
 
       .jest-ava-kockopes h1 {
@@ -36,7 +36,7 @@
       .bad-stuff-dog img {
         position: absolute;
         top: 150px;
-        right: 140px;
+        right: 220px;
         transform: scaleX(-1);
         width: 200px;
       }
@@ -307,7 +307,9 @@ Anna Doubkova, @lithinn
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({
+        ratio: '16:9',
+      });
     </script>
   </body>
 </html>

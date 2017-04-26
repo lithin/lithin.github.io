@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Lato|Ubuntu+Mono');
+:root {
+  --black: #3a353c;
+  --light-purple: #e0bce8;
+  --purple: #a361c2;
+  --dark-purple: #764282;
+  --white: #f7f5ff;
+}
+
+body {
+  font-family: 'Lato';
+}
+h1, h2, h3 {
+  font-family: 'Marck Script';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+}
+
+.remark-slide-content p, .remark-slide-content li {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.remark-slide-content h1 {
+  font-size: 100px;
+}
+.remark-slide-content h2 {
+  font-size: 85px;
+}
+.remark-slide-content pre {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.black-screen {
+  background-color: var(--black);
+  color: var(--white);
+}
+.black-screen h1, .black-screen h2 {
+  color: var(--light-purple);
+}
+.black-screen pre, .black-screen .hljs {
+  background-color: var(--light-purple);
+  color: var(--black);
+  border-color: var(--dark-purple);
+}
+.black-screen .hljs-string {
+  color: var(--dark-purple);
+}
+.black-screen .hljs-literal {
+  color: var(--purple);
+}
+.black-screen a {
+  color: var(--white);
+  font-size: 50px;
+}
+
+.light-purple-screen {
+  background-color: var(--light-purple);
+  color: var(--black);
+}
+.light-purple-screen h1, .light-purple-screen h2 {
+  color: var(--dark-purple);
+}
+.light-purple-screen pre, .light-purple-screen .hljs {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  border-color: var(--black);
+}
+.light-purple-screen .hljs-string {
+  color: var(--purple);
+}
+
+.purple-screen {
+  background-color: var(--purple);
+  color: var(--white);
+}
+.purple-screen h1, .purple-screen h2 {
+  color: var(--white);
+}
+.purple-screen pre, .purple-screen .hljs {
+  background-color: var(--light-purple);
+  color: var(--black);
+  border-color: var(--dark-purple);
+}
+.purple-screen .hljs-string {
+  color: var(--dark-purple);
+}
+
+.dark-purple-screen {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+.dark-purple-screen h1, .dark-purple-screen h2 {
+  color: var(--light-purple);
+}
+.dark-purple-screen pre, .dark-purple-screen .hljs {
+  background-color: var(--black);
+  color: var(--light-purple);
+  border-color: var(--purple);
+}
+.dark-purple-screen .hljs-string {
+  color: var(--purple);
+}
+.dark-purple-screen .hljs-built_in {
+  color: var(--light-purple);
+}
+.dark-purple-screen a {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.white-screen {
+  background-color: var(--white);
+  color: var(--black);
+}
+.white-screen h1, .white-screen h2 {
+  color: var(--dark-purple);
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <style>
+      .image-screen {
+        background-size: auto 90%;
+      }
+
+      .middleman-screen img {
+        position: absolute;
+      }
+
+      .middleman-screen img:first-child {
+        top: 220px;
+        left: 100px;
+        width: 170px;
+      }
+
+      .middleman-screen.fourth img:first-child {
+        display: none;
+      }
+
+      .middleman-screen img:nth-child(2) {
+        top: 290px;
+        left: 480px;
+        width: 210px;
+      }
+
+      .middleman-screen.first img:nth-child(2) {
+        display: none;
+      }
+
+      .middleman-screen.second img:nth-child(2) {
+        display: none;
+      }
+
+      .middleman-screen img:nth-child(3) {
+        top: 120px;
+        left: 750px;
+        width: 350px;
+      }
+
+      .middleman-screen.first img:nth-child(3),
+      .middleman-screen.fourth img:nth-child(3) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, dark-purple-screen
+
+# Service Workers
+Anna Doubkova, PizzaHut, @lithinn
+
+---
+
+class: center, middle, white-screen
+
+# What are service workers?
+
+???
+- progressive enhancement tool
+- offline first
+- pushing notifications
+- home screen icons
+
+---
+
+class: center, middle, purple-screen
+
+# Why offline first?
+
+???
+- tube
+- global - intermittent connection (3bn)
+- ali-express (e-comm)
+- information sharing (news)
+
+---
+
+class: center, middle, light-purple-screen
+
+#The Theory
+
+---
+
+class: black-screen, middleman-screen, first
+
+## The Middleman
+
+![](client.png)
+![](mario.png)
+![](cloud.png)
+
+---
+
+class: black-screen, middleman-screen, second
+
+## The Middleman
+
+![](client.png)
+![](mario.png)
+![](cloud.png)
+
+---
+
+class: black-screen, middleman-screen
+
+## The Middleman
+
+![](client.png)
+![](mario.png)
+![](cloud.png)
+
+---
+
+class: black-screen, middleman-screen, fourth
+
+## The Middleman
+
+![](client.png)
+![](mario.png)
+![](cloud.png)
+
+---
+
+class: light-purple-screen, center, middle
+
+# Just how tacky is it?
+
+---
+
+class: light-purple-screen
+
+# Just how tacky is it?
+
+- HTTPS
+- Installation "per domain"
+- Strictly limited use
+- HTML5 APIs
+- Encrypt sensitive data
+
+---
+
+class: dark-purple-screen, center, middle
+
+#The Practical Bit
+
+---
+
+class: black-screen
+
+#React app
+
+``` js
+const getUpdate = () =>
+  fetch('https://xrlk07ktf3.execute-api.eu-west-1.amazonaws.com/dev/get')
+    .then(response => {
+      return response.json();
+    })
+    .then(result => {
+      this.setState({ data: result });
+    })
+    .catch(error => this.setState({ offline: true }));
+```
+
+---
+
+class: dark-purple-screen
+
+#SW Registration
+
+``` js
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(registration => {
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+  }).catch(err => {
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
+```
+
+---
+
+class: white-screen
+
+#Service Worker
+
+``` js
+self.addEventListener('install', function(event) {
+  event.waitUntil(function() {
+    return caches.open(1)
+      .then(cache => {
+        return cache.addAll([
+          '/',
+          'style.css',
+          'bundle.js',
+          '7160c3f41f57796b29fff534eadc43c.jpeg'
+        ]);
+      });
+  });
+});
+```
+
+---
+
+class: purple-screen
+
+#Service Worker
+
+``` js
+self.addEventListener('fetch', function(event) {
+  event.respondWith(fetch(event.request)
+    .then(response => {
+
+      if (event.request.url.endsWith('/get')) {
+        caches.open(1)
+          .then(cache => {
+            cache.put(event.request, response);
+          });
+
+        return response.clone();
+      }
+      return response;
+    }));
+};
+```
+
+---
+
+class: purple-screen
+
+#Service Worker
+
+``` js
+self.addEventListener('fetch', function(event) {
+  event.respondWith(fetch(event.request)
+    .catch(err => {
+      return caches.match(event.request)
+        .then(response => {
+          var responseToCache = response.clone();
+          caches.open(1)
+            .then(cache => cache.put(event.request, responseToCache));
+          return response;
+        });
+    }));
+});
+```
+
+---
+
+class: black-screen, center, middle
+
+#Example Repo
+
+http://bit.ly/2pf88kn
+
+???
+- DevFest Berlin
+- Adding "Cached" to response
+
+---
+
+class: purple-screen
+
+#Useful resources
+
+- Redux offline
+- Logux
+- Jake Archibald's "Is Service Worker Ready"
+
+---
+
+class: light-purple-screen, middle, center
+
+# Pros & cons
+
+???
+- GOOD
+- more native-like behaviour (Lee Byron - never good enough, no replacement)
+- bad reception
+BAD
+- lack of tooling
+- browser support
+
+---
+
+class: white-screen, middle, center
+
+# Should I use them or not?
+
+???
+- progressively enhanced web app
+---
+
+class: purple-screen, middle, center
+
+# Thank you!
+Anna Doubkova, @lithinn
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+      });
+    </script>
+  </body>
+</html>
